@@ -8,4 +8,12 @@
     <!--<EnablePackageValidation>true</EnablePackageValidation>
     <PackageValidationBaselineVersion>0.1.0-preview.0.1.0</PackageValidationBaselineVersion>-->
   </PropertyGroup>
+  <PropertyGroup>
+    <PackageId>Pure.Diagram.RelationalModel.HashCodes</PackageId>
+    <RootNamespace>Pure.Diagram.RelationalModel.HashCodes</RootNamespace>
+    <AssemblyName>Pure.Diagram.RelationalModel.HashCodes</AssemblyName>
+    <Authors>Dmitry Kurochkin</Authors>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/kudima03/Pure.Diagram.RelationalModel.HashCodes</PackageProjectUrl>
+  </PropertyGroup>
 </Project>
