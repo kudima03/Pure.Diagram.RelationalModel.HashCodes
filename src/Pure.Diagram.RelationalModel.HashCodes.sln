@@ -1,13 +1,18 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 18
-VisualStudioVersion = 18.5.11612.153 insiders
+VisualStudioVersion = 18.5.11612.153
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pure.Diagram.RelationalModel.HashCodes", "Pure.Diagram.RelationalModel.HashCodes\Pure.Diagram.RelationalModel.HashCodes.csproj", "{D961B21B-FD41-4250-916F-2889FBF82180}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{B9195497-29EE-4100-A132-51C6F4B1FAAF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pure.Diagram.RelationalModel.HashCodes", "Tests\Pure.Diagram.RelationalModel.HashCodes\Pure.Diagram.RelationalModel.HashCodes.csproj", "{4B56D264-136D-46C4-A4D1-C32AB10E1EE4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pure.Diagram.RelationalModel.HashCodes.Tests", "Tests\Pure.Diagram.RelationalModel.HashCodes.Tests\Pure.Diagram.RelationalModel.HashCodes.Tests.csproj", "{1D5E8552-6867-4A26-BD8D-ED4F57076BFE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{FA782EAC-0DB2-4F56-90B0-E4DDCB4BFEB0}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,15 +24,18 @@ Global
 		{D961B21B-FD41-4250-916F-2889FBF82180}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D961B21B-FD41-4250-916F-2889FBF82180}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D961B21B-FD41-4250-916F-2889FBF82180}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4B56D264-136D-46C4-A4D1-C32AB10E1EE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4B56D264-136D-46C4-A4D1-C32AB10E1EE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4B56D264-136D-46C4-A4D1-C32AB10E1EE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4B56D264-136D-46C4-A4D1-C32AB10E1EE4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D5E8552-6867-4A26-BD8D-ED4F57076BFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D5E8552-6867-4A26-BD8D-ED4F57076BFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D5E8552-6867-4A26-BD8D-ED4F57076BFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D5E8552-6867-4A26-BD8D-ED4F57076BFE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{4B56D264-136D-46C4-A4D1-C32AB10E1EE4} = {B9195497-29EE-4100-A132-51C6F4B1FAAF}
+		{1D5E8552-6867-4A26-BD8D-ED4F57076BFE} = {B9195497-29EE-4100-A132-51C6F4B1FAAF}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3E51B6EE-3846-43A3-BCAE-B605150C7495}
 	EndGlobalSection
 EndGlobal
