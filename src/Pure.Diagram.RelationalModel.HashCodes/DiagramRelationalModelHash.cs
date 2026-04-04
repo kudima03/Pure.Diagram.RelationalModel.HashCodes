@@ -235,7 +235,7 @@ public sealed record DiagramRelationalModelHash : IDeterminedHash
     )
     { }
 
-    private DiagramRelationalModelHash(
+    public DiagramRelationalModelHash(
         IDeterminedHash idHash,
         IDeterminedHash titleHash,
         IDeterminedHash descriptionHash,
