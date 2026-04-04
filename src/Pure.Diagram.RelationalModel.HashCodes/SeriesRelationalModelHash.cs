@@ -45,13 +45,194 @@ public sealed record SeriesRelationalModelHash : IDeterminedHash
         IGuid diagramId,
         IString label,
         IString source
-    )
-        : this(
+    ) : this(
             new DeterminedHash(id),
+            diagramId,
+            label,
+            source
+    )
+    { }
+
+    public SeriesRelationalModelHash(
+        IDeterminedHash idHash,
+        IGuid diagramId,
+        IString label,
+        IString source
+    ) : this(
+            idHash,
             new DeterminedHash(diagramId),
+            label,
+            source
+    )
+    { }
+
+    public SeriesRelationalModelHash(
+        IGuid id,
+        IDeterminedHash diagramIdHash,
+        IString label,
+        IString source
+    ) : this(
+            new DeterminedHash(id),
+            diagramIdHash,
+            label,
+            source
+    )
+    { }
+
+    public SeriesRelationalModelHash(
+        IGuid id,
+        IGuid diagramId,
+        IDeterminedHash labelHash,
+        IString source
+    ) : this(
+            new DeterminedHash(id),
+            diagramId,
+            labelHash,
+            source
+    )
+    { }
+
+    public SeriesRelationalModelHash(
+        IGuid id,
+        IGuid diagramId,
+        IString label,
+        IDeterminedHash sourceHash
+    ) : this(
+            new DeterminedHash(id),
+            diagramId,
+            label,
+            sourceHash
+    )
+    { }
+
+    public SeriesRelationalModelHash(
+        IDeterminedHash idHash,
+        IDeterminedHash diagramIdHash,
+        IString label,
+        IString source
+    ) : this(
+            idHash,
+            diagramIdHash,
             new DeterminedHash(label),
+            source
+    )
+    { }
+
+    public SeriesRelationalModelHash(
+        IDeterminedHash idHash,
+        IGuid diagramId,
+        IDeterminedHash labelHash,
+        IString source
+    ) : this(
+            idHash,
+            new DeterminedHash(diagramId),
+            labelHash,
+            source
+    )
+    { }
+
+    public SeriesRelationalModelHash(
+        IGuid id,
+        IDeterminedHash diagramIdHash,
+        IDeterminedHash labelHash,
+        IString source
+    ) : this(
+            new DeterminedHash(id),
+            diagramIdHash,
+            labelHash,
+            source
+    )
+    { }
+
+    public SeriesRelationalModelHash(
+        IDeterminedHash idHash,
+        IGuid diagramId,
+        IString label,
+        IDeterminedHash sourceHash
+    ) : this(
+            idHash,
+            new DeterminedHash(diagramId),
+            label,
+            sourceHash
+    )
+    { }
+
+    public SeriesRelationalModelHash(
+        IGuid id,
+        IDeterminedHash diagramIdHash,
+        IString label,
+        IDeterminedHash sourceHash
+    ) : this(
+            new DeterminedHash(id),
+            diagramIdHash,
+            label,
+            sourceHash
+    )
+    { }
+
+    public SeriesRelationalModelHash(
+        IGuid id,
+        IGuid diagramId,
+        IDeterminedHash labelHash,
+        IDeterminedHash sourceHash
+    ) : this(
+            new DeterminedHash(id),
+            diagramId,
+            labelHash,
+            sourceHash
+    )
+    { }
+
+    public SeriesRelationalModelHash(
+        IDeterminedHash idHash,
+        IDeterminedHash diagramIdHash,
+        IDeterminedHash labelHash,
+        IString source
+    ) : this(
+            idHash,
+            diagramIdHash,
+            labelHash,
             new DeterminedHash(source)
-        )
+    )
+    { }
+
+    public SeriesRelationalModelHash(
+        IDeterminedHash idHash,
+        IDeterminedHash diagramIdHash,
+        IString label,
+        IDeterminedHash sourceHash
+    ) : this(
+            idHash,
+            diagramIdHash,
+            new DeterminedHash(label),
+            sourceHash
+    )
+    { }
+
+    public SeriesRelationalModelHash(
+        IDeterminedHash idHash,
+        IGuid diagramId,
+        IDeterminedHash labelHash,
+        IDeterminedHash sourceHash
+    ) : this(
+            idHash,
+            new DeterminedHash(diagramId),
+            labelHash,
+            sourceHash
+    )
+    { }
+
+    public SeriesRelationalModelHash(
+        IGuid id,
+        IDeterminedHash diagramIdHash,
+        IDeterminedHash labelHash,
+        IDeterminedHash sourceHash
+    ) : this(
+            new DeterminedHash(id),
+            diagramIdHash,
+            labelHash,
+            sourceHash
+    )
     { }
 
     public SeriesRelationalModelHash(
