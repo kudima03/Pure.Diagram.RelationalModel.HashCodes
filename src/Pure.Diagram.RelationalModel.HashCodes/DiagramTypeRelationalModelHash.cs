@@ -45,7 +45,7 @@ public sealed record DiagramTypeRelationalModelHash : IDeterminedHash
     public DiagramTypeRelationalModelHash(IGuid id, IDeterminedHash nameHash)
         : this(new DeterminedHash(id), nameHash) { }
 
-    private DiagramTypeRelationalModelHash(
+    public DiagramTypeRelationalModelHash(
         IDeterminedHash idHash,
         IDeterminedHash nameHash
     )
