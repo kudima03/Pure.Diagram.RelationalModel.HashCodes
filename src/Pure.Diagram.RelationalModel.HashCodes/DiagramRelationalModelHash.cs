@@ -45,16 +45,197 @@ public sealed record DiagramRelationalModelHash : IDeterminedHash
         IString title,
         IString description,
         IGuid typeId
-    )
-        : this(
+    ) : this(
             new DeterminedHash(id),
-            new DeterminedHash(title),
-            new DeterminedHash(description),
-            new DeterminedHash(typeId)
-        )
+            title,
+            description,
+            typeId
+    )
     { }
 
-    private DiagramRelationalModelHash(
+    public DiagramRelationalModelHash(
+        IDeterminedHash idHash,
+        IString title,
+        IString description,
+        IGuid typeId
+    ) : this(
+            idHash,
+            new DeterminedHash(title),
+            description,
+            typeId
+    )
+    { }
+
+    public DiagramRelationalModelHash(
+        IGuid id,
+        IDeterminedHash titleHash,
+        IString description,
+        IGuid typeId
+    ) : this(
+            new DeterminedHash(id),
+            titleHash,
+            description,
+            typeId
+    )
+    { }
+
+    public DiagramRelationalModelHash(
+        IGuid id,
+        IString title,
+        IDeterminedHash descriptionHash,
+        IGuid typeId
+    ) : this(
+            new DeterminedHash(id),
+            title,
+            descriptionHash,
+            typeId
+    )
+    { }
+
+    public DiagramRelationalModelHash(
+        IGuid id,
+        IString title,
+        IString description,
+        IDeterminedHash typeIdHash
+    ) : this(
+            new DeterminedHash(id),
+            title,
+            description,
+            typeIdHash
+    )
+    { }
+
+    public DiagramRelationalModelHash(
+        IDeterminedHash idHash,
+        IDeterminedHash titleHash,
+        IString description,
+        IGuid typeId
+    ) : this(
+            idHash,
+            titleHash,
+            new DeterminedHash(description),
+            typeId
+    )
+    { }
+
+    public DiagramRelationalModelHash(
+        IDeterminedHash idHash,
+        IString title,
+        IDeterminedHash descriptionHash,
+        IGuid typeId
+    ) : this(
+            idHash,
+            new DeterminedHash(title),
+            descriptionHash,
+            typeId
+    )
+    { }
+
+    public DiagramRelationalModelHash(
+        IGuid id,
+        IDeterminedHash titleHash,
+        IDeterminedHash descriptionHash,
+        IGuid typeId
+    ) : this(
+            new DeterminedHash(id),
+            titleHash,
+            descriptionHash,
+            typeId
+    )
+    { }
+
+    public DiagramRelationalModelHash(
+        IDeterminedHash idHash,
+        IString title,
+        IString description,
+        IDeterminedHash typeIdHash
+    ) : this(
+            idHash,
+            new DeterminedHash(title),
+            description,
+            typeIdHash
+    )
+    { }
+
+    public DiagramRelationalModelHash(
+        IGuid id,
+        IDeterminedHash titleHash,
+        IString description,
+        IDeterminedHash typeIdHash
+    ) : this(
+            new DeterminedHash(id),
+            titleHash,
+            description,
+            typeIdHash
+    )
+    { }
+
+    public DiagramRelationalModelHash(
+        IGuid id,
+        IString title,
+        IDeterminedHash descriptionHash,
+        IDeterminedHash typeIdHash
+    ) : this(
+            new DeterminedHash(id),
+            title,
+            descriptionHash,
+            typeIdHash
+    )
+    { }
+
+    public DiagramRelationalModelHash(
+        IDeterminedHash idHash,
+        IDeterminedHash titleHash,
+        IDeterminedHash descriptionHash,
+        IGuid typeId
+    ) : this(
+            idHash,
+            titleHash,
+            descriptionHash,
+            new DeterminedHash(typeId)
+    )
+    { }
+
+    public DiagramRelationalModelHash(
+        IDeterminedHash idHash,
+        IDeterminedHash titleHash,
+        IString description,
+        IDeterminedHash typeIdHash
+    ) : this(
+            idHash,
+            titleHash,
+            new DeterminedHash(description),
+            typeIdHash
+    )
+    { }
+
+    public DiagramRelationalModelHash(
+        IDeterminedHash idHash,
+        IString title,
+        IDeterminedHash descriptionHash,
+        IDeterminedHash typeIdHash
+    ) : this(
+            idHash,
+            new DeterminedHash(title),
+            descriptionHash,
+            typeIdHash
+    )
+    { }
+
+    public DiagramRelationalModelHash(
+        IGuid id,
+        IDeterminedHash titleHash,
+        IDeterminedHash descriptionHash,
+        IDeterminedHash typeIdHash
+    ) : this(
+            new DeterminedHash(id),
+            titleHash,
+            descriptionHash,
+            typeIdHash
+    )
+    { }
+
+    public DiagramRelationalModelHash(
         IDeterminedHash idHash,
         IDeterminedHash titleHash,
         IDeterminedHash descriptionHash,
