@@ -7,7 +7,7 @@ using Pure.Primitives.Abstractions.String;
 
 namespace Pure.Diagram.RelationalModel.HashCodes;
 
-public sealed record SeriesRelationalModelHash : IDeterminedHash
+public sealed record DiagramSeriesRelationalModelHash : IDeterminedHash
 {
     private static readonly byte[] TypePrefix =
     [
@@ -37,205 +37,130 @@ public sealed record SeriesRelationalModelHash : IDeterminedHash
 
     private readonly IDeterminedHash _sourceHash;
 
-    public SeriesRelationalModelHash(ISeriesRelationalModel model)
+    public DiagramSeriesRelationalModelHash(IDiagramSeriesRelationalModel model)
         : this(model.Id, model.DiagramId, model.Label, model.Source) { }
 
-    public SeriesRelationalModelHash(
+    public DiagramSeriesRelationalModelHash(
         IGuid id,
         IGuid diagramId,
         IString label,
         IString source
-    ) : this(
-            new DeterminedHash(id),
-            diagramId,
-            label,
-            source
     )
-    { }
+        : this(new DeterminedHash(id), diagramId, label, source) { }
 
-    public SeriesRelationalModelHash(
+    public DiagramSeriesRelationalModelHash(
         IDeterminedHash idHash,
         IGuid diagramId,
         IString label,
         IString source
-    ) : this(
-            idHash,
-            new DeterminedHash(diagramId),
-            label,
-            source
     )
-    { }
+        : this(idHash, new DeterminedHash(diagramId), label, source) { }
 
-    public SeriesRelationalModelHash(
+    public DiagramSeriesRelationalModelHash(
         IGuid id,
         IDeterminedHash diagramIdHash,
         IString label,
         IString source
-    ) : this(
-            new DeterminedHash(id),
-            diagramIdHash,
-            label,
-            source
     )
-    { }
+        : this(new DeterminedHash(id), diagramIdHash, label, source) { }
 
-    public SeriesRelationalModelHash(
+    public DiagramSeriesRelationalModelHash(
         IGuid id,
         IGuid diagramId,
         IDeterminedHash labelHash,
         IString source
-    ) : this(
-            new DeterminedHash(id),
-            diagramId,
-            labelHash,
-            source
     )
-    { }
+        : this(new DeterminedHash(id), diagramId, labelHash, source) { }
 
-    public SeriesRelationalModelHash(
+    public DiagramSeriesRelationalModelHash(
         IGuid id,
         IGuid diagramId,
         IString label,
         IDeterminedHash sourceHash
-    ) : this(
-            new DeterminedHash(id),
-            diagramId,
-            label,
-            sourceHash
     )
-    { }
+        : this(new DeterminedHash(id), diagramId, label, sourceHash) { }
 
-    public SeriesRelationalModelHash(
+    public DiagramSeriesRelationalModelHash(
         IDeterminedHash idHash,
         IDeterminedHash diagramIdHash,
         IString label,
         IString source
-    ) : this(
-            idHash,
-            diagramIdHash,
-            new DeterminedHash(label),
-            source
     )
-    { }
+        : this(idHash, diagramIdHash, new DeterminedHash(label), source) { }
 
-    public SeriesRelationalModelHash(
+    public DiagramSeriesRelationalModelHash(
         IDeterminedHash idHash,
         IGuid diagramId,
         IDeterminedHash labelHash,
         IString source
-    ) : this(
-            idHash,
-            new DeterminedHash(diagramId),
-            labelHash,
-            source
     )
-    { }
+        : this(idHash, new DeterminedHash(diagramId), labelHash, source) { }
 
-    public SeriesRelationalModelHash(
+    public DiagramSeriesRelationalModelHash(
         IGuid id,
         IDeterminedHash diagramIdHash,
         IDeterminedHash labelHash,
         IString source
-    ) : this(
-            new DeterminedHash(id),
-            diagramIdHash,
-            labelHash,
-            source
     )
-    { }
+        : this(new DeterminedHash(id), diagramIdHash, labelHash, source) { }
 
-    public SeriesRelationalModelHash(
+    public DiagramSeriesRelationalModelHash(
         IDeterminedHash idHash,
         IGuid diagramId,
         IString label,
         IDeterminedHash sourceHash
-    ) : this(
-            idHash,
-            new DeterminedHash(diagramId),
-            label,
-            sourceHash
     )
-    { }
+        : this(idHash, new DeterminedHash(diagramId), label, sourceHash) { }
 
-    public SeriesRelationalModelHash(
+    public DiagramSeriesRelationalModelHash(
         IGuid id,
         IDeterminedHash diagramIdHash,
         IString label,
         IDeterminedHash sourceHash
-    ) : this(
-            new DeterminedHash(id),
-            diagramIdHash,
-            label,
-            sourceHash
     )
-    { }
+        : this(new DeterminedHash(id), diagramIdHash, label, sourceHash) { }
 
-    public SeriesRelationalModelHash(
+    public DiagramSeriesRelationalModelHash(
         IGuid id,
         IGuid diagramId,
         IDeterminedHash labelHash,
         IDeterminedHash sourceHash
-    ) : this(
-            new DeterminedHash(id),
-            diagramId,
-            labelHash,
-            sourceHash
     )
-    { }
+        : this(new DeterminedHash(id), diagramId, labelHash, sourceHash) { }
 
-    public SeriesRelationalModelHash(
+    public DiagramSeriesRelationalModelHash(
         IDeterminedHash idHash,
         IDeterminedHash diagramIdHash,
         IDeterminedHash labelHash,
         IString source
-    ) : this(
-            idHash,
-            diagramIdHash,
-            labelHash,
-            new DeterminedHash(source)
     )
-    { }
+        : this(idHash, diagramIdHash, labelHash, new DeterminedHash(source)) { }
 
-    public SeriesRelationalModelHash(
+    public DiagramSeriesRelationalModelHash(
         IDeterminedHash idHash,
         IDeterminedHash diagramIdHash,
         IString label,
         IDeterminedHash sourceHash
-    ) : this(
-            idHash,
-            diagramIdHash,
-            new DeterminedHash(label),
-            sourceHash
     )
-    { }
+        : this(idHash, diagramIdHash, new DeterminedHash(label), sourceHash) { }
 
-    public SeriesRelationalModelHash(
+    public DiagramSeriesRelationalModelHash(
         IDeterminedHash idHash,
         IGuid diagramId,
         IDeterminedHash labelHash,
         IDeterminedHash sourceHash
-    ) : this(
-            idHash,
-            new DeterminedHash(diagramId),
-            labelHash,
-            sourceHash
     )
-    { }
+        : this(idHash, new DeterminedHash(diagramId), labelHash, sourceHash) { }
 
-    public SeriesRelationalModelHash(
+    public DiagramSeriesRelationalModelHash(
         IGuid id,
         IDeterminedHash diagramIdHash,
         IDeterminedHash labelHash,
         IDeterminedHash sourceHash
-    ) : this(
-            new DeterminedHash(id),
-            diagramIdHash,
-            labelHash,
-            sourceHash
     )
-    { }
+        : this(new DeterminedHash(id), diagramIdHash, labelHash, sourceHash) { }
 
-    public SeriesRelationalModelHash(
+    public DiagramSeriesRelationalModelHash(
         IDeterminedHash idHash,
         IDeterminedHash diagramIdHash,
         IDeterminedHash labelHash,

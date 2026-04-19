@@ -8,7 +8,7 @@ using Guid = Pure.Primitives.Guid.Guid;
 
 namespace Pure.Diagram.RelationalModel.HashCodes.Tests;
 
-public sealed record SeriesRelationalModelHashTests
+public sealed record DiagramSeriesRelationalModelHashTests
 {
     private readonly byte[] _typePrefix =
     [
@@ -38,15 +38,19 @@ public sealed record SeriesRelationalModelHashTests
         IString label = new RandomString();
         IString source = new RandomString();
 
-        ISeriesRelationalModel model = new SeriesRelationalModel(
+        IDiagramSeriesRelationalModel model = new DiagramSeriesRelationalModel(
             id,
             diagramId,
             label,
             source
         );
 
-        SeriesRelationalModelHash expected = new SeriesRelationalModelHash(model);
-        SeriesRelationalModelHash actual = new SeriesRelationalModelHash(model);
+        DiagramSeriesRelationalModelHash expected = new DiagramSeriesRelationalModelHash(
+            model
+        );
+        DiagramSeriesRelationalModelHash actual = new DiagramSeriesRelationalModelHash(
+            model
+        );
 
         Assert.True(expected.SequenceEqual(actual));
     }
@@ -59,15 +63,17 @@ public sealed record SeriesRelationalModelHashTests
         IString label = new RandomString();
         IString source = new RandomString();
 
-        ISeriesRelationalModel model = new SeriesRelationalModel(
+        IDiagramSeriesRelationalModel model = new DiagramSeriesRelationalModel(
             id,
             diagramId,
             label,
             source
         );
 
-        SeriesRelationalModelHash expected = new SeriesRelationalModelHash(model);
-        SeriesRelationalModelHash actual = new SeriesRelationalModelHash(
+        DiagramSeriesRelationalModelHash expected = new DiagramSeriesRelationalModelHash(
+            model
+        );
+        DiagramSeriesRelationalModelHash actual = new DiagramSeriesRelationalModelHash(
             id,
             diagramId,
             label,
@@ -85,15 +91,17 @@ public sealed record SeriesRelationalModelHashTests
         IString label = new RandomString();
         IString source = new RandomString();
 
-        ISeriesRelationalModel model = new SeriesRelationalModel(
+        IDiagramSeriesRelationalModel model = new DiagramSeriesRelationalModel(
             id,
             diagramId,
             label,
             source
         );
 
-        SeriesRelationalModelHash expected = new SeriesRelationalModelHash(model);
-        SeriesRelationalModelHash actual = new SeriesRelationalModelHash(
+        DiagramSeriesRelationalModelHash expected = new DiagramSeriesRelationalModelHash(
+            model
+        );
+        DiagramSeriesRelationalModelHash actual = new DiagramSeriesRelationalModelHash(
             new DeterminedHash(id),
             diagramId,
             label,
@@ -111,15 +119,17 @@ public sealed record SeriesRelationalModelHashTests
         IString label = new RandomString();
         IString source = new RandomString();
 
-        ISeriesRelationalModel model = new SeriesRelationalModel(
+        IDiagramSeriesRelationalModel model = new DiagramSeriesRelationalModel(
             id,
             diagramId,
             label,
             source
         );
 
-        SeriesRelationalModelHash expected = new SeriesRelationalModelHash(model);
-        SeriesRelationalModelHash actual = new SeriesRelationalModelHash(
+        DiagramSeriesRelationalModelHash expected = new DiagramSeriesRelationalModelHash(
+            model
+        );
+        DiagramSeriesRelationalModelHash actual = new DiagramSeriesRelationalModelHash(
             id,
             new DeterminedHash(diagramId),
             label,
@@ -137,15 +147,17 @@ public sealed record SeriesRelationalModelHashTests
         IString label = new RandomString();
         IString source = new RandomString();
 
-        ISeriesRelationalModel model = new SeriesRelationalModel(
+        IDiagramSeriesRelationalModel model = new DiagramSeriesRelationalModel(
             id,
             diagramId,
             label,
             source
         );
 
-        SeriesRelationalModelHash expected = new SeriesRelationalModelHash(model);
-        SeriesRelationalModelHash actual = new SeriesRelationalModelHash(
+        DiagramSeriesRelationalModelHash expected = new DiagramSeriesRelationalModelHash(
+            model
+        );
+        DiagramSeriesRelationalModelHash actual = new DiagramSeriesRelationalModelHash(
             new DeterminedHash(id),
             new DeterminedHash(diagramId),
             label,
@@ -163,15 +175,17 @@ public sealed record SeriesRelationalModelHashTests
         IString label = new RandomString();
         IString source = new RandomString();
 
-        ISeriesRelationalModel model = new SeriesRelationalModel(
+        IDiagramSeriesRelationalModel model = new DiagramSeriesRelationalModel(
             id,
             diagramId,
             label,
             source
         );
 
-        SeriesRelationalModelHash expected = new SeriesRelationalModelHash(model);
-        SeriesRelationalModelHash actual = new SeriesRelationalModelHash(
+        DiagramSeriesRelationalModelHash expected = new DiagramSeriesRelationalModelHash(
+            model
+        );
+        DiagramSeriesRelationalModelHash actual = new DiagramSeriesRelationalModelHash(
             id,
             diagramId,
             new DeterminedHash(label),
@@ -189,15 +203,17 @@ public sealed record SeriesRelationalModelHashTests
         IString label = new RandomString();
         IString source = new RandomString();
 
-        ISeriesRelationalModel model = new SeriesRelationalModel(
+        IDiagramSeriesRelationalModel model = new DiagramSeriesRelationalModel(
             id,
             diagramId,
             label,
             source
         );
 
-        SeriesRelationalModelHash expected = new SeriesRelationalModelHash(model);
-        SeriesRelationalModelHash actual = new SeriesRelationalModelHash(
+        DiagramSeriesRelationalModelHash expected = new DiagramSeriesRelationalModelHash(
+            model
+        );
+        DiagramSeriesRelationalModelHash actual = new DiagramSeriesRelationalModelHash(
             new DeterminedHash(id),
             diagramId,
             new DeterminedHash(label),
@@ -215,15 +231,17 @@ public sealed record SeriesRelationalModelHashTests
         IString label = new RandomString();
         IString source = new RandomString();
 
-        ISeriesRelationalModel model = new SeriesRelationalModel(
+        IDiagramSeriesRelationalModel model = new DiagramSeriesRelationalModel(
             id,
             diagramId,
             label,
             source
         );
 
-        SeriesRelationalModelHash expected = new SeriesRelationalModelHash(model);
-        SeriesRelationalModelHash actual = new SeriesRelationalModelHash(
+        DiagramSeriesRelationalModelHash expected = new DiagramSeriesRelationalModelHash(
+            model
+        );
+        DiagramSeriesRelationalModelHash actual = new DiagramSeriesRelationalModelHash(
             id,
             new DeterminedHash(diagramId),
             new DeterminedHash(label),
@@ -241,15 +259,17 @@ public sealed record SeriesRelationalModelHashTests
         IString label = new RandomString();
         IString source = new RandomString();
 
-        ISeriesRelationalModel model = new SeriesRelationalModel(
+        IDiagramSeriesRelationalModel model = new DiagramSeriesRelationalModel(
             id,
             diagramId,
             label,
             source
         );
 
-        SeriesRelationalModelHash expected = new SeriesRelationalModelHash(model);
-        SeriesRelationalModelHash actual = new SeriesRelationalModelHash(
+        DiagramSeriesRelationalModelHash expected = new DiagramSeriesRelationalModelHash(
+            model
+        );
+        DiagramSeriesRelationalModelHash actual = new DiagramSeriesRelationalModelHash(
             new DeterminedHash(id),
             new DeterminedHash(diagramId),
             new DeterminedHash(label),
@@ -267,15 +287,17 @@ public sealed record SeriesRelationalModelHashTests
         IString label = new RandomString();
         IString source = new RandomString();
 
-        ISeriesRelationalModel model = new SeriesRelationalModel(
+        IDiagramSeriesRelationalModel model = new DiagramSeriesRelationalModel(
             id,
             diagramId,
             label,
             source
         );
 
-        SeriesRelationalModelHash expected = new SeriesRelationalModelHash(model);
-        SeriesRelationalModelHash actual = new SeriesRelationalModelHash(
+        DiagramSeriesRelationalModelHash expected = new DiagramSeriesRelationalModelHash(
+            model
+        );
+        DiagramSeriesRelationalModelHash actual = new DiagramSeriesRelationalModelHash(
             id,
             diagramId,
             label,
@@ -293,15 +315,17 @@ public sealed record SeriesRelationalModelHashTests
         IString label = new RandomString();
         IString source = new RandomString();
 
-        ISeriesRelationalModel model = new SeriesRelationalModel(
+        IDiagramSeriesRelationalModel model = new DiagramSeriesRelationalModel(
             id,
             diagramId,
             label,
             source
         );
 
-        SeriesRelationalModelHash expected = new SeriesRelationalModelHash(model);
-        SeriesRelationalModelHash actual = new SeriesRelationalModelHash(
+        DiagramSeriesRelationalModelHash expected = new DiagramSeriesRelationalModelHash(
+            model
+        );
+        DiagramSeriesRelationalModelHash actual = new DiagramSeriesRelationalModelHash(
             new DeterminedHash(id),
             diagramId,
             label,
@@ -319,15 +343,17 @@ public sealed record SeriesRelationalModelHashTests
         IString label = new RandomString();
         IString source = new RandomString();
 
-        ISeriesRelationalModel model = new SeriesRelationalModel(
+        IDiagramSeriesRelationalModel model = new DiagramSeriesRelationalModel(
             id,
             diagramId,
             label,
             source
         );
 
-        SeriesRelationalModelHash expected = new SeriesRelationalModelHash(model);
-        SeriesRelationalModelHash actual = new SeriesRelationalModelHash(
+        DiagramSeriesRelationalModelHash expected = new DiagramSeriesRelationalModelHash(
+            model
+        );
+        DiagramSeriesRelationalModelHash actual = new DiagramSeriesRelationalModelHash(
             id,
             new DeterminedHash(diagramId),
             label,
@@ -345,15 +371,17 @@ public sealed record SeriesRelationalModelHashTests
         IString label = new RandomString();
         IString source = new RandomString();
 
-        ISeriesRelationalModel model = new SeriesRelationalModel(
+        IDiagramSeriesRelationalModel model = new DiagramSeriesRelationalModel(
             id,
             diagramId,
             label,
             source
         );
 
-        SeriesRelationalModelHash expected = new SeriesRelationalModelHash(model);
-        SeriesRelationalModelHash actual = new SeriesRelationalModelHash(
+        DiagramSeriesRelationalModelHash expected = new DiagramSeriesRelationalModelHash(
+            model
+        );
+        DiagramSeriesRelationalModelHash actual = new DiagramSeriesRelationalModelHash(
             new DeterminedHash(id),
             new DeterminedHash(diagramId),
             label,
@@ -371,15 +399,17 @@ public sealed record SeriesRelationalModelHashTests
         IString label = new RandomString();
         IString source = new RandomString();
 
-        ISeriesRelationalModel model = new SeriesRelationalModel(
+        IDiagramSeriesRelationalModel model = new DiagramSeriesRelationalModel(
             id,
             diagramId,
             label,
             source
         );
 
-        SeriesRelationalModelHash expected = new SeriesRelationalModelHash(model);
-        SeriesRelationalModelHash actual = new SeriesRelationalModelHash(
+        DiagramSeriesRelationalModelHash expected = new DiagramSeriesRelationalModelHash(
+            model
+        );
+        DiagramSeriesRelationalModelHash actual = new DiagramSeriesRelationalModelHash(
             id,
             diagramId,
             new DeterminedHash(label),
@@ -397,15 +427,17 @@ public sealed record SeriesRelationalModelHashTests
         IString label = new RandomString();
         IString source = new RandomString();
 
-        ISeriesRelationalModel model = new SeriesRelationalModel(
+        IDiagramSeriesRelationalModel model = new DiagramSeriesRelationalModel(
             id,
             diagramId,
             label,
             source
         );
 
-        SeriesRelationalModelHash expected = new SeriesRelationalModelHash(model);
-        SeriesRelationalModelHash actual = new SeriesRelationalModelHash(
+        DiagramSeriesRelationalModelHash expected = new DiagramSeriesRelationalModelHash(
+            model
+        );
+        DiagramSeriesRelationalModelHash actual = new DiagramSeriesRelationalModelHash(
             new DeterminedHash(id),
             diagramId,
             new DeterminedHash(label),
@@ -423,15 +455,17 @@ public sealed record SeriesRelationalModelHashTests
         IString label = new RandomString();
         IString source = new RandomString();
 
-        ISeriesRelationalModel model = new SeriesRelationalModel(
+        IDiagramSeriesRelationalModel model = new DiagramSeriesRelationalModel(
             id,
             diagramId,
             label,
             source
         );
 
-        SeriesRelationalModelHash expected = new SeriesRelationalModelHash(model);
-        SeriesRelationalModelHash actual = new SeriesRelationalModelHash(
+        DiagramSeriesRelationalModelHash expected = new DiagramSeriesRelationalModelHash(
+            model
+        );
+        DiagramSeriesRelationalModelHash actual = new DiagramSeriesRelationalModelHash(
             id,
             new DeterminedHash(diagramId),
             new DeterminedHash(label),
@@ -449,15 +483,17 @@ public sealed record SeriesRelationalModelHashTests
         IString label = new RandomString();
         IString source = new RandomString();
 
-        ISeriesRelationalModel model = new SeriesRelationalModel(
+        IDiagramSeriesRelationalModel model = new DiagramSeriesRelationalModel(
             id,
             diagramId,
             label,
             source
         );
 
-        SeriesRelationalModelHash expected = new SeriesRelationalModelHash(model);
-        SeriesRelationalModelHash actual = new SeriesRelationalModelHash(
+        DiagramSeriesRelationalModelHash expected = new DiagramSeriesRelationalModelHash(
+            model
+        );
+        DiagramSeriesRelationalModelHash actual = new DiagramSeriesRelationalModelHash(
             new DeterminedHash(id),
             new DeterminedHash(diagramId),
             new DeterminedHash(label),
@@ -475,14 +511,14 @@ public sealed record SeriesRelationalModelHashTests
         IString label = new RandomString();
         IString source = new RandomString();
 
-        ISeriesRelationalModel model = new SeriesRelationalModel(
+        IDiagramSeriesRelationalModel model = new DiagramSeriesRelationalModel(
             id,
             diagramId,
             label,
             source
         );
 
-        IEnumerable hashEnumerable = new SeriesRelationalModelHash(model);
+        IEnumerable hashEnumerable = new DiagramSeriesRelationalModelHash(model);
         IEnumerator<byte> expectedHash = new DeterminedHash(
             _typePrefix
                 .Concat(new DeterminedHash(model.Id))
@@ -514,7 +550,7 @@ public sealed record SeriesRelationalModelHashTests
         IString label = new RandomString();
         IString source = new RandomString();
 
-        ISeriesRelationalModel model = new SeriesRelationalModel(
+        IDiagramSeriesRelationalModel model = new DiagramSeriesRelationalModel(
             id,
             diagramId,
             label,
@@ -529,6 +565,6 @@ public sealed record SeriesRelationalModelHashTests
                 .Concat(new DeterminedHash(model.Source))
         );
 
-        Assert.Equal(expectedHash, new SeriesRelationalModelHash(model));
+        Assert.Equal(expectedHash, new DiagramSeriesRelationalModelHash(model));
     }
 }
