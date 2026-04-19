@@ -36,12 +36,11 @@ public sealed record DiagramTypeRelationalModelHashTests
         IGuid id = new Guid();
         IString name = new RandomString();
 
-        IDiagramTypeRelationalModel model = new DiagramTypeRelationalModel(
-            id,
-            name
-        );
+        IDiagramTypeRelationalModel model = new DiagramTypeRelationalModel(id, name);
 
-        DiagramTypeRelationalModelHash expected = new DiagramTypeRelationalModelHash(model);
+        DiagramTypeRelationalModelHash expected = new DiagramTypeRelationalModelHash(
+            model
+        );
         DiagramTypeRelationalModelHash actual = new DiagramTypeRelationalModelHash(model);
 
         Assert.True(expected.SequenceEqual(actual));
@@ -53,12 +52,11 @@ public sealed record DiagramTypeRelationalModelHashTests
         IGuid id = new Guid();
         IString name = new RandomString();
 
-        IDiagramTypeRelationalModel model = new DiagramTypeRelationalModel(
-            id,
-            name
-        );
+        IDiagramTypeRelationalModel model = new DiagramTypeRelationalModel(id, name);
 
-        DiagramTypeRelationalModelHash expected = new DiagramTypeRelationalModelHash(model);
+        DiagramTypeRelationalModelHash expected = new DiagramTypeRelationalModelHash(
+            model
+        );
         DiagramTypeRelationalModelHash actual = new DiagramTypeRelationalModelHash(
             id,
             name
@@ -73,12 +71,11 @@ public sealed record DiagramTypeRelationalModelHashTests
         IGuid id = new Guid();
         IString name = new RandomString();
 
-        IDiagramTypeRelationalModel model = new DiagramTypeRelationalModel(
-            id,
-            name
-        );
+        IDiagramTypeRelationalModel model = new DiagramTypeRelationalModel(id, name);
 
-        DiagramTypeRelationalModelHash expected = new DiagramTypeRelationalModelHash(model);
+        DiagramTypeRelationalModelHash expected = new DiagramTypeRelationalModelHash(
+            model
+        );
         DiagramTypeRelationalModelHash actual = new DiagramTypeRelationalModelHash(
             new DeterminedHash(id),
             name
@@ -93,12 +90,11 @@ public sealed record DiagramTypeRelationalModelHashTests
         IGuid id = new Guid();
         IString name = new RandomString();
 
-        IDiagramTypeRelationalModel model = new DiagramTypeRelationalModel(
-            id,
-            name
-        );
+        IDiagramTypeRelationalModel model = new DiagramTypeRelationalModel(id, name);
 
-        DiagramTypeRelationalModelHash expected = new DiagramTypeRelationalModelHash(model);
+        DiagramTypeRelationalModelHash expected = new DiagramTypeRelationalModelHash(
+            model
+        );
         DiagramTypeRelationalModelHash actual = new DiagramTypeRelationalModelHash(
             id,
             new DeterminedHash(name)
@@ -113,12 +109,11 @@ public sealed record DiagramTypeRelationalModelHashTests
         IGuid id = new Guid();
         IString name = new RandomString();
 
-        IDiagramTypeRelationalModel model = new DiagramTypeRelationalModel(
-            id,
-            name
-        );
+        IDiagramTypeRelationalModel model = new DiagramTypeRelationalModel(id, name);
 
-        DiagramTypeRelationalModelHash expected = new DiagramTypeRelationalModelHash(model);
+        DiagramTypeRelationalModelHash expected = new DiagramTypeRelationalModelHash(
+            model
+        );
         DiagramTypeRelationalModelHash actual = new DiagramTypeRelationalModelHash(
             new DeterminedHash(id),
             new DeterminedHash(name)
@@ -133,10 +128,7 @@ public sealed record DiagramTypeRelationalModelHashTests
         IGuid id = new Guid();
         IString name = new RandomString();
 
-        IDiagramTypeRelationalModel model = new DiagramTypeRelationalModel(
-            id,
-            name
-        );
+        IDiagramTypeRelationalModel model = new DiagramTypeRelationalModel(id, name);
 
         IEnumerable hashEnumerable = new DiagramTypeRelationalModelHash(model);
         IEnumerator<byte> expectedHash = new DeterminedHash(
@@ -166,10 +158,7 @@ public sealed record DiagramTypeRelationalModelHashTests
         IGuid id = new Guid();
         IString name = new RandomString();
 
-        IDiagramTypeRelationalModel model = new DiagramTypeRelationalModel(
-            id,
-            name
-        );
+        IDiagramTypeRelationalModel model = new DiagramTypeRelationalModel(id, name);
 
         IEnumerable<byte> expectedHash = new DeterminedHash(
             _typePrefix
